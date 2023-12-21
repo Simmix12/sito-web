@@ -1,0 +1,142 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins', sans-serif;
+}
+.barraalta{
+  width: 100%;
+  min-height: 100vh;
+  background-position:centre;
+  background-image:url(decisa.jpg);
+  background-size: cover;
+  padding:10px 10%;
+  overflow: hidden;
+  position:absolute;
+  
+}
+nav{
+    padding:10px 0;
+  display:flex;
+  align-items: centre;
+  justify-content: space-between;
+}
+.logo{
+  width: 140px;
+}
+.login{
+  text-decoration: none;
+  color:black;
+  margin-right: 15px;
+  font-weight: 400;
+}
+.bottone{
+  display:inline-block;
+  text-decoration: none;
+  padding: 14px 40px;
+  color:white;
+  background-image: linear-gradient(45deg,black, green);
+  font-size: 14px;
+  border-radius:30px ;
+  border-top-right-radius:0 ;
+  transition: 0.5s;
+  
+}
+nav ul li{
+  list-style:none;
+  margin:10px 15px;
+  display: inline-block;
+  
+}
+nav ul li a{
+  text-decoration:none;
+  color:black;
+  font-weight: 400;
+  
+}
+.contenuto{
+  margin-top: 10%;
+  max-width: 600px;
+  
+}
+.contenuto h1{
+  font-size: 70px;
+  color:green;
+  
+}
+.contenuto p{
+  margin:10px 0 30px;
+  color:black;
+   animation-delay: 0.5s;
+}
+.contenuto .bottone{
+  padding:15px 80px;
+  font-size:15px;
+  animation-delay: 1s;
+  
+}
+.bottone:hover{
+  border-top-right-radius: 30px;
+}
+
+.immagineinmezzo{
+  width:530px;
+  position:absolute;
+  bottom:58%;
+  right:10%;
+}
+.immagineinmezzo2{
+  width:530px;
+  position:absolute;
+  bottom:22%;
+  right:10%;
+}
+.feature-img.animazione{
+   animation-delay: 1.5s;
+}
+.animazione{
+  opacity:0;
+  transform:translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+@keyframes moveup{
+  100%{
+    opacity: 1;
+    transform:translateY(0px;);
+  }
+}
+.log{
+  position: absolute;
+  top:45%;
+  left:45%;
+}
+.log h1{
+  position:relative;
+  right:27%;
+  
+  
+}
+.schiacia{
+  position:absolute;
+  top:100%;
+  width: 30%;
+  height: 25%;
+  text-align: centre;
+  padding: 7px 20px;
+  color:white;
+  background-image: linear-gradient(45deg,black, green);
+  font-size: 14px;
+  border-radius:30px ;
+  border-top-right-radius:0 ;
+  transition: 0.5s;
+}
+@media(max-whidth: 1366px){
+  .immagineinmezzo2{
+     width: 420px;
+  
+  }
+}
